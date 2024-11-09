@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e9e9e9;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 .75rem;
+}
+/* Small */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+/* Medium */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+/* Large */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+/* X-large */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* XX-large */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+.logo-container {
+    width: 150px;
+}
+.logo {
+    max-width: 100%;
+}
+form {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form > input[type="text"] {
+    width: 70%;
+    padding: 10px 5px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: all 0.3s;
+}
+form > input[type="text"]:hover {
+    box-shadow: 0 5px 8px 5px lightgray;
+}
+form > input[type="text"]:focus {
+    border-color: rgb(9, 88, 198);
+}
+form > input[type="submit"] {
+    font-size: 16px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(9, 88, 198);
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+form > input[type="submit"]:hover {
+    box-shadow: 0 5px 8px 5px lightgray;
+}
+ul {
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 8px 5px lightgray;
+}
+li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:575px) {
+    li {
+    font-size: 16px;
+}
+}
+li:last-child {
+    border-bottom: none;
+}
+li > p {
+    overflow-wrap: break-word;    /* Ensures long words break within the container */
+    word-break: break-all;
+    padding: 5px;
+}
+li.done > p {
+    text-decoration: line-through;
+    text-decoration-color: cadetblue;
+}
+li > input.editInput {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+li div {
+    margin-left: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+li div input {
+    width: 18px;
+    height: 18px;
+    accent-color: rgb(9, 88, 198);
+    cursor: pointer;
+}
+@media (max-width:575px) {
+    li div input {
+    width: 14px;
+    height: 14px;
+    }
+}
+li div span {
+    cursor: pointer;
+    transition: .3s;
+}
+li div span.dltBtn {
+    margin: 0 10px;
+}
+@media (max-width:575px) {
+    li div span.dltBtn {
+    margin: 0 5px;
+}
+}
+li div span:hover {
+    color: rgb(9, 88, 198);
+}
