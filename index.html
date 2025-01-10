@@ -3,24 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOM Challenge</title>
+    <meta name="description" content="Chievo - Your productivity app for managing tasks, calendars, and Pomodoro sessions">
+    <title>Chievo</title>
+
+    <!-- Favicons-->
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/Favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="imgs/Favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="imgs/Favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/x-icon" sizes="48x48" href="imgs/Favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="imgs/Favicon/apple-touch-icon.png">
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/41f522390a.js" crossorigin="anonymous"></script>
+
+    <!-- CSS style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <div class="logo-container">
-                <img src="https://i.imgur.com/HyFMqoU.png" alt="LOGO" class="logo" onerror="this.src='logo.png'">
-            </div>
-            <input type="text">
-            <input type="submit" value="ADD TASK">
-        </form>
-        <ul class="tasks"></ul>
-    </div>
+    <aside>
+        <h1 class="logo">Chievo</h1>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-square-poll-vertical" aria-hidden="true"></i>Dashboard</a></li>
+                <li><a href=""><i class="fa-solid fa-list-check" aria-hidden="true"></i>To do</a></li>
+                <li><a href=""><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>Calendar</a></li>
+                <li><a href=""><i class="fa-solid fa-stopwatch" aria-hidden="true"></i>Pomodoro</a></li>
+            </ul>
+        </nav>
+        <div>
+            <div class="dark-mode"><span class="toggle"></span>Dark Mode</div>
+            <button><i class="fa-solid fa-plus"></i>New Task</button>
+        </div>
+    </aside>
+    <main>
+        <section>
+
+        </section>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
