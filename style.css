@@ -80,16 +80,18 @@ aside nav ul li a i {
     margin-right: 20px;
 }
 
-aside div .dark-mode {
+aside .dark-mode-btn {
     display: flex;
     align-items: center;
     padding: 20px 60px 20px 0;
     font-size: 18px;
     font-weight: bold;
+    background-color: transparent;
     color: white;
+    cursor: initial;
 }
 
-aside div .dark-mode .toggle {
+aside .dark-mode-btn .toggle {
     display: inline-block;
     width: 60px;
     height: 30px;
@@ -100,11 +102,11 @@ aside div .dark-mode .toggle {
     position: relative;
 }
 
-body.dark-mode aside div .dark-mode .toggle {
+body.dark-mode aside .dark-mode-btn .toggle {
     background-color: var(--primary-floral);
 }
 
-aside div .dark-mode .toggle::after {
+aside .dark-mode-btn .toggle::after {
     content: '';
     display: block;
     width: 30px;
@@ -117,11 +119,11 @@ aside div .dark-mode .toggle::after {
     transition: transform 0.3s;
 }
 
-body.dark-mode aside div .dark-mode .toggle::after {
+body.dark-mode aside .dark-mode-btn .toggle::after {
     transform: translateX(30px);
 }
 
-aside div button {
+aside .new-task-btn {
     padding: 20px 60px 20px 25px;
     display: flex;
     font-size: 18px;
@@ -132,11 +134,11 @@ aside div button {
     transition: background-color 0.3s;
 }
 
-aside div button i {
+aside .new-task-btn i {
     margin-right: 10px;
 }
 
-aside div button:hover {
+aside .new-task-btn:hover {
     background-color: #9c7fc9;
 }
 
